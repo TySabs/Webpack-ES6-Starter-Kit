@@ -9,3 +9,6 @@
 * Project should now be ready
   * Start the development server: ```npm start```
   * Bundle a build: ```npm build```
+* After setup, the project can run different development environments:
+  * React: ```git checkout react```
+  * RxJS: ```git checkout RxJS```
