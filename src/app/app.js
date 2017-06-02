@@ -1,11 +1,15 @@
-console.log("Hello Joe!");
+import React, { Component } from 'react';
+import logo from '../assets/react-logo.svg';
 
-const header = document.getElementById("app-test");
+class App extends Component {
+	render() {
+		return (
+			<div className="app-wrapper">
+				<h1>App Works!</h1>
+				<img src="./src/assets/react-logo.svg" className="app-logo" alt="React Logo" />
+			</div>
+		);
+	}
+}
 
-const source = ['1', '1', 'foo', '4', '5', 'baz', '3', '22', 'bar', '2', 'App Works!'];
-
-const result = source
-	.filter(x => isNaN(x))
-	.reduce((x, y) => x + " " + y + " ");
-
-header.innerHTML = result;
+export default App;
